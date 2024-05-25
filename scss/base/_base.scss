@@ -1,0 +1,23 @@
+// шрифты ("Roboto"; "Playfair Display"; "Raleway(regular, bold)")
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300&display=swap');
+
+// базовые стили
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+    background-color: $dark;
+    color: $white;
+    font-size: 1.6rem;
+}
+
+// базовые стили для ссылок
+a{
+    color: $white;
+    transition: color .2s ease-in;
+    &:hover{
+        color: $accent;
+    }
+}
