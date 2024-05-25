@@ -16,8 +16,15 @@ body{
 // базовые стили для ссылок
 a{
     color: $white;
+    text-decoration: none;
     transition: color .2s ease-in;
     &:hover{
         color: $accent;
     }
+}
+
+// базовые стили для контейнера
+.container{
+    margin: 0 auto;
+    max-width: 114rem;
 }
