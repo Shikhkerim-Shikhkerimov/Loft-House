@@ -22,6 +22,7 @@ a:hover {
 .container {
   margin: 0 auto;
   max-width: 114rem;
+  border: 1px solid white;
 }
 
 .header-section {
@@ -77,10 +78,10 @@ a:hover {
   top: 0;
   width: 2.1rem;
   height: 2.1rem;
-  background: url(./../../icons/placeholder.svg) no-repeat;
+  background: url(./../../icons//header/placeholder.svg) no-repeat;
 }
 .info_tel::before {
-  background: url(./../../icons/phone-call.svg) no-repeat;
+  background: url(./../../icons//header/phone-call.svg) no-repeat;
 }
 
 .nav {
@@ -91,4 +92,30 @@ a:hover {
   display: flex;
   -moz-column-gap: 4rem;
        column-gap: 4rem;
+}
+
+.benefits {
+  padding: 12rem 0;
+}
+
+.benefits__row {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 7rem;
+       column-gap: 7rem;
+}
+
+.benefits__item {
+  text-align: center;
+}
+
+.benefits__item-img {
+  margin-bottom: 5.3rem;
+}
+
+.benefits__item-text {
+  font-size: 2rem;
+  line-height: 1.35;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
