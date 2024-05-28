@@ -29,3 +29,11 @@ a{
     max-width: 114rem;
     border: 1px solid white; // удалить
 }
+
+// стили заголовка второго уровня
+.title-2{
+    font-size: 3.6rem;
+    font-family: $font-accent;
+    color: $accent;
+    font-weight: 700;
+}
