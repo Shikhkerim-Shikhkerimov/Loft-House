@@ -1,0 +1,69 @@
+.cta{
+    padding: 18rem 0;
+    background: linear-gradient(180deg, $dark 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, .9) 50.52%, $dark 90.1%), url("./../../img/cta/cta-bg.jpg");
+}
+
+.cta__title{
+    margin-bottom: 1.7rem;
+}
+
+.cta__wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.cta__text{
+    border: 1px solid; // удалить
+    line-height: 1.5;
+}
+
+.cta__form{
+    border: 1px solid; // удалить
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem 3rem;
+}
+
+
+// стилизация формы
+.form__input{
+    height: 5rem;
+    padding: 1.2rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    color: $white;
+    font-size: 1.4rem;
+    transition: background-color .2s ease-in;
+    &::placeholder{
+        color: $placeholder;
+    }
+    &:focus{
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.form__privacy{
+    font-size: 1.3rem;
+    color: $muted;
+    text-align: center;
+    line-height: 1.23;
+}
+
+// стилизация кнопки
+.form__btn{
+    height: 5rem;
+    background: $accent;
+    font-size: 1.6rem;
+    color: $white;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.2rem;
+    cursor: pointer;
+    transition: background-color .2s ease-in;
+    &:hover{
+        background: saturate($accent, 20%)
+    }
+}
