@@ -1,0 +1,32 @@
+.footer{
+    padding: 7rem 0 5rem;
+    background: $footer-bg;
+    font-size: 1.4rem;
+    letter-spacing: 0.05em;
+}
+
+.footer__grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.footer__logo{
+    margin-top: -1.2rem;
+}
+
+.footer__nav-list{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.footer__adress{
+    display: grid;
+    gap: 2rem;
+}
+
+.footer__socials{
+    display: flex;
+    align-items: center;
+    column-gap: 2.2rem;
+}

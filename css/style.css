@@ -36,6 +36,11 @@ a:hover {
   font-weight: 700;
 }
 
+.link-mail {
+  color: #D4C17F;
+  font-weight: 700;
+}
+
 .header-section {
   height: -moz-max-content;
   height: max-content;
@@ -97,6 +102,7 @@ a:hover {
 
 .nav {
   font-size: 1.4rem;
+  letter-spacing: 0.05em;
 }
 
 .nav__list {
@@ -341,4 +347,38 @@ a:hover {
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
   align-items: center;
+}
+
+.footer {
+  padding: 7rem 0 5rem;
+  background: #2D343C;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.footer__logo {
+  margin-top: -1.2rem;
+}
+
+.footer__nav-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.footer__adress {
+  display: grid;
+  gap: 2rem;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 2.2rem;
+       column-gap: 2.2rem;
 }
