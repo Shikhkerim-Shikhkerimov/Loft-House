@@ -314,3 +314,16 @@ a:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+.section-map {
+  padding: 18rem 0;
+}
+
+.section-map__title {
+  margin-bottom: 8.8rem;
+}
+
+.map {
+  height: 36rem;
+  background: #626262;
+}
