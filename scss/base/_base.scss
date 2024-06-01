@@ -47,3 +47,8 @@ a{
     color: $accent;
     font-weight: 700;
 }
+
+//  отключение скролла для меню моб. версии
+.no-scroll{
+    overflow-y: hidden;
+}

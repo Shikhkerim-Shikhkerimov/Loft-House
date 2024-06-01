@@ -7,3 +7,10 @@
     font-family: $font-accent;
     font-size: 40rem;
 }
+
+// адаптация сайта
+@mixin mediaTablet {
+    @media screen and (max-width: $tablet) {
+        @content;
+    }
+}
