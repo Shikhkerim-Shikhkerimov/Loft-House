@@ -113,6 +113,18 @@ a:hover {
 
 .benefits {
   padding: 12rem 0;
+  position: relative;
+}
+.benefits::after {
+  content: "II";
+  position: absolute;
+  top: 0;
+  line-height: 1.15;
+  opacity: 0.02;
+  font-family: "Playfair Display", serif;
+  font-size: 40rem;
+  left: calc(50% + 55rem);
+  transform: translate(-50%, 0);
 }
 
 .benefits__row {
@@ -137,11 +149,26 @@ a:hover {
   font-weight: 300;
 }
 
-.appatrments__title {
+.apartments {
+  position: relative;
+}
+.apartments::before {
+  content: "III";
+  position: absolute;
+  top: 0;
+  line-height: 1.15;
+  opacity: 0.02;
+  font-family: "Playfair Display", serif;
+  font-size: 40rem;
+  right: calc(50% + 55rem);
+  transform: translate(50%, 0);
+}
+
+.apartments__title {
   margin-bottom: 8rem;
 }
 
-.appatrments__cards {
+.apartments__cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   justify-items: center;
@@ -280,6 +307,21 @@ a:hover {
   background: #e5ca6e;
 }
 
+.video {
+  position: relative;
+}
+.video::after {
+  content: "IV";
+  position: absolute;
+  top: 0;
+  line-height: 1.15;
+  opacity: 0.02;
+  font-family: "Playfair Display", serif;
+  font-size: 40rem;
+  left: calc(50% + 55rem);
+  transform: translate(-50%, 0);
+}
+
 .video__link {
   max-width: 72rem;
   max-height: 65rem;
@@ -323,6 +365,20 @@ a:hover {
 
 .section-map {
   padding: 18rem 0;
+  position: relative;
+}
+.section-map::before {
+  content: "V";
+  position: absolute;
+  top: 0;
+  line-height: 1.15;
+  opacity: 0.02;
+  font-family: "Playfair Display", serif;
+  font-size: 40rem;
+  z-index: -1;
+  top: 16rem;
+  right: calc(50% + 55rem);
+  transform: translate(50%, 0);
 }
 
 .section-map__title {

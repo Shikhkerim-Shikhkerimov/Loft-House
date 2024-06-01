@@ -1,0 +1,9 @@
+// декоративные римские цифры на странице
+@mixin decorNumber{
+    position: absolute;
+    top: 0;
+    line-height: 1.15;
+    opacity: .02;
+    font-family: $font-accent;
+    font-size: 40rem;
+}

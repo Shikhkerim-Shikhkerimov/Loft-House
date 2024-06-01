@@ -1,8 +1,18 @@
-.appatrments__title{
+.apartments{
+    position: relative;
+    &::before{
+        content: "III";
+        @include decorNumber;
+        right: calc(50% + 55rem);
+        transform: translate(50%, 0);
+    }
+}
+
+.apartments__title{
     margin-bottom: 8rem;
 }
 
-.appatrments__cards{
+.apartments__cards{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     justify-items: center;

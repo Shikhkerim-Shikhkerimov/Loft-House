@@ -1,3 +1,13 @@
+.video{
+    position: relative;
+    &::after{
+        content: "IV";
+        @include decorNumber;
+        left: calc(50% + 55rem);
+        transform: translate(-50%, 0);
+    }
+}
+
 .video__link{
     max-width: 72rem;
     max-height: 65rem;

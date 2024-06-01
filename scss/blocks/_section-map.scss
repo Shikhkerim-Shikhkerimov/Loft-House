@@ -1,5 +1,14 @@
 .section-map{
     padding: 18rem 0;
+    position: relative;
+    &::before{
+        content: "V";
+        @include decorNumber;
+        z-index: -1;
+        top: 16rem;
+        right: calc(50% + 55rem);
+        transform: translate(50%, 0);
+    }
 }
 
 .section-map__title{
