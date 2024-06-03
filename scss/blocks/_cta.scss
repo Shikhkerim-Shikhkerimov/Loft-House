@@ -1,6 +1,9 @@
 .cta{
-    padding: 18rem 0;
-    background: linear-gradient(180deg, $dark 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, .9) 50.52%, $dark 90.1%), url("./../../img/cta/cta-bg.jpg");
+    padding: 18rem 1.5rem;
+    background: linear-gradient(180deg, $dark 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, .9) 50.52%, $dark 90.1%), url("./../../img/cta/cta-bg.jpg") center / cover no-repeat;
+    @include mediaTablet{
+        padding: 9rem 1.5rem;
+    }
 }
 
 .cta__title{
@@ -11,11 +14,18 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
+    @include mediaTablet{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
 }
 
 .cta__text{
     border: 1px solid; // удалить
     line-height: 1.5;
+    @include mediaTablet{
+        font-size: 1.4rem;
+    }
 }
 
 .cta__form{
@@ -23,6 +33,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3.5rem 3rem;
+    @include mediaTablet{
+        grid-template-columns: minmax(20rem, 30rem);
+    }
 }
 
 
@@ -50,6 +63,9 @@
     color: $muted;
     text-align: center;
     line-height: 1.23;
+    @include mediaTablet{
+        grid-row: 4/5;
+    }
 }
 
 // стилизация кнопки

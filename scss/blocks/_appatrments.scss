@@ -1,5 +1,6 @@
 .apartments{
     position: relative;
+    padding: 0 1.5rem;
     &::before{
         content: "III";
         @include decorNumber;
@@ -9,14 +10,20 @@
 }
 
 .apartments__title{
-    margin-bottom: 8rem;
+    margin-bottom: 8.8rem;
+    @include mediaTablet{
+        margin-bottom: 4.4rem;
+    }
 }
 
 .apartments__cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     gap: 3rem;
+    @include mediaTablet{
+        grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    }
 }
 
 // стилизация карточек
@@ -80,4 +87,9 @@
     right: 2rem;
     bottom: 4.4rem;
     font-size: 2.4rem;
+    @include mediaTablet{
+        font-size: 2rem;
+        left: 3rem;
+        bottom: 3rem;
+    }
 }

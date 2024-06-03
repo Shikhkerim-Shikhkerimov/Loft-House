@@ -1,11 +1,15 @@
 .benefits{
     padding: 12rem 0;
     position: relative;
+    overflow: hidden;
     &::after{
         content: "II";
         @include decorNumber;
         left: calc(50% + 55rem);
         transform: translate(-50%, 0);
+    }
+    @include mediaTablet{
+        padding: 9rem 0;
     }
 }
 
@@ -13,6 +17,12 @@
     display: flex;
     justify-content: center;
     column-gap: 7rem;
+    @include mediaTablet{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+        justify-content: center;
+        gap: 4rem 3rem;
+    }
 }
 
 .benefits__item{
@@ -21,6 +31,11 @@
 
 .benefits__item-img{
     margin-bottom: 5.3rem;
+    @include mediaTablet{
+        width: 6rem;
+        height: 6rem;
+        margin-bottom: 2rem;
+    }
 }
 
 .benefits__item-text{
@@ -28,4 +43,7 @@
     line-height: 1.35;
     font-family: $font-secondary;
     font-weight: 300;
+    @include mediaTablet{
+        font-size: 1.6rem;
+    }
 }

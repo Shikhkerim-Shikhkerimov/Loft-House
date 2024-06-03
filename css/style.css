@@ -35,6 +35,11 @@ a:hover {
   color: #D4C17F;
   font-weight: 700;
 }
+@media screen and (max-width: 940px) {
+  .title-2 {
+    font-size: 2.8rem;
+  }
+}
 
 .link-mail {
   color: #D4C17F;
@@ -97,7 +102,7 @@ a:hover {
 .header-section__nav-btn {
   display: none;
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 940px) {
   .header-section__nav-btn {
     display: block;
   }
@@ -108,7 +113,7 @@ a:hover {
   height: 100%;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 940px) {
   .header-section__nav {
     display: none;
   }
@@ -122,7 +127,7 @@ a:hover {
   font-weight: 700;
   line-height: 130%;
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 940px) {
   .header-section__title {
     font-size: 3.2rem;
   }
@@ -131,7 +136,7 @@ a:hover {
 .header-section__bottom {
   text-align: center;
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 940px) {
   .header-section__bottom {
     display: flex;
     flex-direction: column;
@@ -145,7 +150,7 @@ a:hover {
   position: relative;
   padding-left: 3.5rem;
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 940px) {
   .info {
     font-size: 1.4rem;
     padding-left: 3rem;
@@ -154,7 +159,7 @@ a:hover {
 .info:not(:last-child) {
   margin-right: 10rem;
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 940px) {
   .info:not(:last-child) {
     margin: 0;
   }
@@ -249,6 +254,7 @@ a:hover {
 .benefits {
   padding: 12rem 0;
   position: relative;
+  overflow: hidden;
 }
 .benefits::after {
   content: "II";
@@ -261,12 +267,25 @@ a:hover {
   left: calc(50% + 55rem);
   transform: translate(-50%, 0);
 }
+@media screen and (max-width: 940px) {
+  .benefits {
+    padding: 9rem 0;
+  }
+}
 
 .benefits__row {
   display: flex;
   justify-content: center;
   -moz-column-gap: 7rem;
        column-gap: 7rem;
+}
+@media screen and (max-width: 940px) {
+  .benefits__row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+    justify-content: center;
+    gap: 4rem 3rem;
+  }
 }
 
 .benefits__item {
@@ -276,6 +295,13 @@ a:hover {
 .benefits__item-img {
   margin-bottom: 5.3rem;
 }
+@media screen and (max-width: 940px) {
+  .benefits__item-img {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 2rem;
+  }
+}
 
 .benefits__item-text {
   font-size: 2rem;
@@ -283,9 +309,15 @@ a:hover {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
+@media screen and (max-width: 940px) {
+  .benefits__item-text {
+    font-size: 1.6rem;
+  }
+}
 
 .apartments {
   position: relative;
+  padding: 0 1.5rem;
 }
 .apartments::before {
   content: "III";
@@ -300,14 +332,24 @@ a:hover {
 }
 
 .apartments__title {
-  margin-bottom: 8rem;
+  margin-bottom: 8.8rem;
+}
+@media screen and (max-width: 940px) {
+  .apartments__title {
+    margin-bottom: 4.4rem;
+  }
 }
 
 .apartments__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   gap: 3rem;
+}
+@media screen and (max-width: 940px) {
+  .apartments__cards {
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  }
 }
 
 .card {
@@ -371,10 +413,22 @@ a:hover {
   bottom: 4.4rem;
   font-size: 2.4rem;
 }
+@media screen and (max-width: 940px) {
+  .card__title {
+    font-size: 2rem;
+    left: 3rem;
+    bottom: 3rem;
+  }
+}
 
 .cta {
-  padding: 18rem 0;
-  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9) 50.52%, #242B33 90.1%), url("./../../img/cta/cta-bg.jpg");
+  padding: 18rem 1.5rem;
+  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9) 50.52%, #242B33 90.1%), url("./../../img/cta/cta-bg.jpg") center/cover no-repeat;
+}
+@media screen and (max-width: 940px) {
+  .cta {
+    padding: 9rem 1.5rem;
+  }
 }
 
 .cta__title {
@@ -386,10 +440,21 @@ a:hover {
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
 }
+@media screen and (max-width: 940px) {
+  .cta__wrapper {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
 
 .cta__text {
   border: 1px solid;
   line-height: 1.5;
+}
+@media screen and (max-width: 940px) {
+  .cta__text {
+    font-size: 1.4rem;
+  }
 }
 
 .cta__form {
@@ -397,6 +462,11 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3.5rem 3rem;
+}
+@media screen and (max-width: 940px) {
+  .cta__form {
+    grid-template-columns: minmax(20rem, 30rem);
+  }
 }
 
 .form__input {
@@ -426,6 +496,11 @@ a:hover {
   text-align: center;
   line-height: 1.23;
 }
+@media screen and (max-width: 940px) {
+  .form__privacy {
+    grid-row: 4/5;
+  }
+}
 
 .form__btn {
   height: 5rem;
@@ -444,6 +519,8 @@ a:hover {
 
 .video {
   position: relative;
+  padding: 0 1.5rem;
+  overflow: hidden;
 }
 .video::after {
   content: "IV";
@@ -499,7 +576,7 @@ a:hover {
 }
 
 .section-map {
-  padding: 18rem 0;
+  padding: 18rem 1.5rem;
   position: relative;
 }
 .section-map::before {
@@ -526,7 +603,12 @@ a:hover {
 }
 
 .feedback {
-  padding-bottom: 18rem;
+  padding: 0 1.5rem 18rem;
+}
+@media screen and (max-width: 940px) {
+  .feedback {
+    padding: 0 1.5rem 9rem;
+  }
 }
 
 .feedback__title {
@@ -539,9 +621,15 @@ a:hover {
   gap: 3rem;
   align-items: center;
 }
+@media screen and (max-width: 940px) {
+  .feedback__form {
+    grid-template-columns: minmax(20rem, 30rem);
+    justify-content: center;
+  }
+}
 
 .footer {
-  padding: 7rem 0 5rem;
+  padding: 7rem 1.5rem 5rem;
   background: #2D343C;
   font-size: 1.4rem;
   letter-spacing: 0.05em;

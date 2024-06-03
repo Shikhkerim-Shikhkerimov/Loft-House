@@ -1,5 +1,8 @@
 .feedback{
-    padding-bottom: 18rem;
+    padding: 0 1.5rem 18rem;
+    @include mediaTablet{
+        padding: 0 1.5rem 9rem;
+    }
 }
 
 .feedback__title{
@@ -11,4 +14,8 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
     align-items: center;
+    @include mediaTablet{
+        grid-template-columns: minmax(20rem, 30rem);
+        justify-content: center;
+    }
 }
