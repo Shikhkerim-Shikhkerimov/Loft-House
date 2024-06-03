@@ -432,7 +432,7 @@ a:hover {
 }
 
 .cta__title {
-  margin-bottom: 1.7rem;
+  margin-bottom: 3.8rem;
 }
 
 .cta__wrapper {
@@ -562,6 +562,12 @@ a:hover {
   transform: translate(-50%, -50%);
   transition: all 0.2s ease-in;
 }
+@media screen and (max-width: 940px) {
+  .video__icon {
+    width: 8rem;
+    height: 8rem;
+  }
+}
 
 .video__link:hover .video__icon {
   transform: translate(-50%, -50%) scale(1.2);
@@ -592,9 +598,19 @@ a:hover {
   right: calc(50% + 55rem);
   transform: translate(50%, 0);
 }
+@media screen and (max-width: 940px) {
+  .section-map {
+    padding: 9rem 1.5rem;
+  }
+}
 
 .section-map__title {
   margin-bottom: 8.8rem;
+}
+@media screen and (max-width: 940px) {
+  .section-map__title {
+    margin-bottom: 4.4rem;
+  }
 }
 
 .map {
@@ -634,11 +650,21 @@ a:hover {
   font-size: 1.4rem;
   letter-spacing: 0.05em;
 }
+@media screen and (max-width: 940px) {
+  .footer {
+    padding: 3.5rem 1.5rem 2.5rem;
+  }
+}
 
 .footer__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
+}
+@media screen and (max-width: 940px) {
+  .footer__grid {
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  }
 }
 
 .footer__logo {

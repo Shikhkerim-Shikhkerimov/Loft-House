@@ -9,10 +9,16 @@
         right: calc(50% + 55rem);
         transform: translate(50%, 0);
     }
+    @include mediaTablet{
+        padding: 9rem 1.5rem;
+    }
 }
 
 .section-map__title{
     margin-bottom: 8.8rem;
+    @include mediaTablet{
+        margin-bottom: 4.4rem;
+    }
 }
 
 .map{
