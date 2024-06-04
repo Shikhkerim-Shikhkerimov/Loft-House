@@ -1,0 +1,26 @@
+.аbout-complex{
+    padding: 0 1.5rem;
+    position: relative;
+    &::after{
+        content: "VI";
+        @include decorNumber;
+        z-index: -1;
+        top: -4rem;
+        left: calc(50% + 55rem);
+        transform: translate(-50%, 0);
+    }
+}
+
+.аbout-complex__title{
+    margin-bottom: 8.8rem;
+    @include mediaTablet{
+        margin-bottom: 4.4rem;
+    }
+}
+
+.аbout-complex__text{
+    line-height: 1.5;
+    @include mediaTablet{
+        font-size: 1.4rem;
+    }
+}
