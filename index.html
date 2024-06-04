@@ -121,7 +121,7 @@
                     <!-- форма -->
                     <form class=" cta__form form" action="">
                         <input class="form__input" type="text" placeholder="Ваше имя">
-                        <input class="form__input" type="text" placeholder="Ваш телефон">
+                        <input class="form__input" data-tel-input type="text" placeholder="Ваш телефон">
                         <p class="form__privacy">*Мы никому не передаем ваши данные. <br>И не сохраняем ваш номер в базу.</p>
                         <!-- кнопка -->
                         <button class="form__btn" type="submit">Посмотреть район</button>
@@ -165,7 +165,7 @@
                 <form class="feedback__form form" action="">
                     <p class="form__privacy">*Мы никому не передаем ваши данные. <br>И не сохраняем ваш номер в базу.</p>
                     <input class="form__input" type="text" placeholder="Ваше имя">
-                    <input class="form__input" type="text" placeholder="Ваш телефон">
+                    <input class="form__input" data-tel-input type="text" placeholder="Ваш телефон">
                     <!-- кнопка -->
                     <button class="form__btn" type="submit">Посмотреть район</button>
                 </form>
@@ -238,6 +238,9 @@
         </div>
     </footer>
 
+    <!-- phoneMask скрипт -->
+    <script src="libs/phoneMask/mask.js"></script>
+    <script src="libs/phoneMask/mask_list.js"></script>
     <!-- js скрипт -->
     <script src="js/main.js"></script>
 </body>
