@@ -133,7 +133,7 @@
         <!-- секция с видео -->
         <section class="video">
             <div class="container">
-                <a class="video__link" href="#">
+                <a class="video__link" data-youtubelightbox href="https://www.youtube.com/watch?v=-YAzSex8zIo&t=16288s">
                     <img class="video__icon" src="icons/video/play-button.svg" alt="icon">
                     <img class="video__img" src="img/video/video-img.jpg" alt="img">
                 </a>
@@ -238,9 +238,22 @@
         </div>
     </footer>
 
+    <!-- YouTube LightBox -->
+    <div id="youtubelightbox" class="youtubelightbox">
+        <div class="youtubelightbox__centeredchild">
+            <div class="youtubelightbox__videowrapper">
+                <div id="youtubelightboxPlayer"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- phoneMask скрипт -->
     <script src="libs/phoneMask/mask.js"></script>
     <script src="libs/phoneMask/mask_list.js"></script>
+
+    <!-- youtubeLightbox скрипт -->
+    <script src="libs/youtubeLightbox/youtubeLightbox.js"></script>
+
     <!-- js скрипт -->
     <script src="js/main.js"></script>
 </body>
