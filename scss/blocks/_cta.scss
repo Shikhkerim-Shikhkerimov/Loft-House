@@ -21,7 +21,6 @@
 }
 
 .cta__text{
-    border: 1px solid; // удалить
     line-height: 1.5;
     @include mediaTablet{
         font-size: 1.4rem;
@@ -29,7 +28,6 @@
 }
 
 .cta__form{
-    border: 1px solid; // удалить
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3.5rem 3rem;
@@ -37,7 +35,6 @@
         grid-template-columns: minmax(20rem, 30rem);
     }
 }
-
 
 // стилизация формы
 .form__input{

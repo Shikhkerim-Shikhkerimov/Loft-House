@@ -6,11 +6,21 @@
     opacity: .02;
     font-family: $font-accent;
     font-size: 40rem;
+    transition: all .2s ease-in;
+    @include mediaDecorNumber {
+        display: none;
+    }
 }
 
 // адаптация сайта
 @mixin mediaTablet {
     @media screen and (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin mediaDecorNumber {
+    @media screen and (max-width: $decorNumber) {
         @content;
     }
 }
