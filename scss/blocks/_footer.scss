@@ -19,6 +19,10 @@
 
 .footer__logo{
     margin-top: -1.2rem;
+    transition: transform .2s ease-in;
+    &:hover{
+        transform: scale(1.05);
+    }
 }
 
 .footer__nav-list{
@@ -35,4 +39,11 @@
     display: flex;
     align-items: center;
     column-gap: 2.2rem;
+}
+
+.footer__item_link{
+    transition: transform .2s ease-in;
+    &:hover{
+        transform: scale(1.2);
+    }
 }

@@ -9,6 +9,9 @@
         right: calc(50% + 55rem);
         transform: translate(50%, 0);
     }
+    &:hover::before{
+        opacity: .2;
+    }
     @include mediaTablet{
         padding: 9rem 1.5rem;
     }

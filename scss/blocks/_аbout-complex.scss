@@ -9,6 +9,9 @@
         left: calc(50% + 55rem);
         transform: translate(-50%, 0);
     }
+    &:hover::after{
+        opacity: .2;
+    }
 }
 
 .аbout-complex__title{
