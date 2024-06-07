@@ -1,8 +1,13 @@
-.loft-olympus{
+// общие стили для страниц loft-olympus, nice-loft, loft-studio и loft-prestige
+.header{
+    padding: 3rem 1.5rem;
+}
+
+.apartment-information{
     padding: 0 1.5rem;
 }
 
-.loft-olympus__title{
+.apartment-information__title{
     margin-bottom: 8.8rem;
     @include mediaTablet{
         margin-bottom: 4.4rem;
@@ -10,7 +15,7 @@
 }
 
 // контент
-.loft-olympus__apartmentDetail{
+.apartmentDetail{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     align-items: center;
