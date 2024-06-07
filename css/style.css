@@ -57,6 +57,15 @@ a:hover {
   }
 }
 
+.title-2_3 {
+  font-size: 2.4rem;
+}
+@media screen and (max-width: 940px) {
+  .title-2_3 {
+    font-size: 1.6rem;
+  }
+}
+
 .link-mail {
   color: #D4C17F;
   font-weight: 700;
@@ -395,7 +404,7 @@ a:hover {
 
 .card {
   max-width: 54rem;
-  min-height: 32rem;
+  max-height: 32rem;
   position: relative;
   display: inline-block;
   color: #FFFFFF;
@@ -899,4 +908,67 @@ a:hover {
   .аbout-complex__text {
     font-size: 1.4rem;
   }
+}
+
+.loft-olympus-header {
+  padding: 3rem 1.5rem;
+}
+
+.loft-olympus {
+  padding: 0 1.5rem;
+}
+
+.loft-olympus__title {
+  margin-bottom: 8.8rem;
+}
+@media screen and (max-width: 940px) {
+  .loft-olympus__title {
+    margin-bottom: 4.4rem;
+  }
+}
+
+.loft-olympus__apartmentDetail {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  align-items: center;
+  gap: 10rem;
+}
+
+.apartmentDetail__slider {
+  border: 1px solid;
+  height: 30rem;
+}
+
+.apartmentDetail__title {
+  border: 1px solid;
+}
+.apartmentDetail__title:nth-child(1) {
+  margin-bottom: 1.5rem;
+}
+
+.title-2_3 {
+  margin-bottom: 1.5rem;
+}
+
+.apartmentDetail__text {
+  line-height: 1.5;
+}
+@media screen and (max-width: 940px) {
+  .apartmentDetail__text {
+    font-size: 1.4rem;
+  }
+}
+
+.apartmentDetail__item {
+  font-weight: bold;
+  line-height: 1.5;
+}
+@media screen and (max-width: 940px) {
+  .apartmentDetail__item {
+    font-size: 1.4rem;
+  }
+}
+.apartmentDetail__item span {
+  font-weight: normal;
+  color: #D4C17F;
 }

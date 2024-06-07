@@ -1,0 +1,55 @@
+.loft-olympus{
+    padding: 0 1.5rem;
+}
+
+.loft-olympus__title{
+    margin-bottom: 8.8rem;
+    @include mediaTablet{
+        margin-bottom: 4.4rem;
+    }
+}
+
+// контент
+.loft-olympus__apartmentDetail{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    align-items: center;
+    gap: 10rem;
+}
+
+// слайдер
+.apartmentDetail__slider{
+    border: 1px solid; // удалить
+    height: 30rem;;
+}
+
+// информация о жилье
+.apartmentDetail__title{
+    border: 1px solid; // удалить
+    &:nth-child(1){
+        margin-bottom: 1.5rem;
+    }
+}
+
+.title-2_3{
+    margin-bottom: 1.5rem;
+}
+
+.apartmentDetail__text{
+    line-height: 1.5;
+    @include mediaTablet{
+        font-size: 1.4rem;
+    }
+}
+
+.apartmentDetail__item{
+    font-weight: bold;
+    line-height: 1.5;
+    @include mediaTablet{
+        font-size: 1.4rem;
+    }
+    span{
+        font-weight: normal;
+        color: $accent;
+    }
+}

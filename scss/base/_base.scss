@@ -45,6 +45,13 @@ a{
     }
 }
 
+.title-2_3{
+    font-size: 2.4rem;
+    @include mediaTablet{
+        font-size: 1.6rem;
+    }
+}
+
 // стили email ссылки
 .link-mail{
     color: $accent;

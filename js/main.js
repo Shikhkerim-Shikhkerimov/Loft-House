@@ -73,3 +73,5 @@ function init() {
   map.geoObjects.add(myPlacemark);
   myPlacemark.balloon.open();
 }
+
+// слайдер
