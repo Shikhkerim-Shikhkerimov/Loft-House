@@ -1,5 +1,9 @@
 // меню для мобильной версии
 .nav-icon-btn {
+	position: fixed;
+	top: 3.5rem;
+	right: 1.5rem;
+	z-index: 555;
 	--time: 0.1s;
 	--width: 40px;
 	--height: 30px;

@@ -42,7 +42,6 @@ a:hover {
 .container {
   margin: 0 auto;
   max-width: 114rem;
-  border: 1px solid white;
 }
 
 .title-2 {
@@ -222,6 +221,10 @@ a:hover {
 }
 
 .nav-icon-btn {
+  position: fixed;
+  top: 3.5rem;
+  right: 1.5rem;
+  z-index: 555;
   --time: 0.1s;
   --width: 40px;
   --height: 30px;
@@ -641,7 +644,7 @@ a:hover {
 }
 
 .section-map {
-  padding: 18rem 1.5rem;
+  padding: 13rem 1.5rem;
   position: relative;
 }
 .section-map::before {
@@ -866,7 +869,7 @@ a:hover {
 }
 
 .аbout-complex {
-  padding: 0 1.5rem;
+  padding: 5rem 1.5rem;
   position: relative;
 }
 .аbout-complex::after {
