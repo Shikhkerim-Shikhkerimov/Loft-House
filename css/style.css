@@ -42,6 +42,7 @@ a:hover {
 .container {
   margin: 0 auto;
   max-width: 114rem;
+  border: 1px solid;
 }
 
 .title-2 {
@@ -931,22 +932,97 @@ a:hover {
 }
 
 .apartmentDetail {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.slider {
+  width: 60%;
+  height: 50rem;
+  margin: 0 auto;
+  margin-bottom: 7rem;
+  position: relative;
+}
+
+#slide {
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.item {
+  width: 200px;
+  height: 300px;
+  background-position: 50% 50%;
+  display: inline-block;
+  transition: 0.5s;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.item:nth-child(1),
+.item:nth-child(2) {
+  left: 0;
+  top: 0;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.item:nth-child(3) {
+  left: -33%;
+  z-index: -1;
+}
+
+.item:nth-child(4) {
+  right: -33%;
+  z-index: -1;
+}
+
+.item:nth-child(n+5) {
+  left: calc(-33% + 440px);
+  opacity: 0;
+  z-index: -1;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 1rem;
+  z-index: 555;
+  width: 100%;
+  text-align: center;
+}
+
+.buttons button {
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.buttons button img {
+  width: 100%;
+  height: 100%;
+}
+
+.buttons button:hover {
+  background: #bac383;
+}
+
+.apartmentDetail__inf {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   align-items: center;
-  gap: 10rem;
-}
-
-.apartmentDetail__slider {
-  border: 1px solid;
-  height: 30rem;
-}
-
-.apartmentDetail__title {
-  border: 1px solid;
-}
-.apartmentDetail__title:nth-child(1) {
-  margin-bottom: 1.5rem;
+  gap: 7rem;
 }
 
 .title-2_3 {
