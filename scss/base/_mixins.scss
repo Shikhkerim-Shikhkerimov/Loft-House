@@ -19,6 +19,12 @@
     }
 }
 
+@mixin mediaSlider {
+    @media screen and (max-width: $slider) {
+        @content;
+    }
+}
+
 @mixin mediaDecorNumber {
     @media screen and (max-width: $decorNumber) {
         @content;

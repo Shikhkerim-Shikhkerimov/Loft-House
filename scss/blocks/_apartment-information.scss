@@ -28,6 +28,7 @@
     margin: 0 auto;
     margin-bottom: 7rem;
     position: relative;
+
 }
 
 #slide{
@@ -78,6 +79,7 @@
 }
 
 
+// кнопки слайдера
 .buttons{
     position: absolute;
     bottom: 1rem;
@@ -87,8 +89,8 @@
 }
 
 .buttons button{
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
     border: none;
     border-radius: 50%;
     transition: .5s;
@@ -102,16 +104,6 @@
 .buttons button:hover{
     background: #bac383;
 }
-
-
-
-
-
-
-
-
-
-
 
 // информация о жилье
 .apartmentDetail__inf{
