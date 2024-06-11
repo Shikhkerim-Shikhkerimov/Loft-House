@@ -28,7 +28,9 @@
     margin: 0 auto;
     margin-bottom: 7rem;
     position: relative;
-
+    @include mediaSlider {
+        width: 80%;
+    }
 }
 
 #slide{
@@ -78,12 +80,17 @@
     z-index: -1;
 }
 
+.item:nth-child(n + 3){
+    @include mediaSlider {
+        display: none;
+    }
+}
 
 // кнопки слайдера
 .buttons{
     position: absolute;
     bottom: 1rem;
-    z-index: 555;
+    z-index: 55;
     width: 100%;
     text-align: center;
 }
