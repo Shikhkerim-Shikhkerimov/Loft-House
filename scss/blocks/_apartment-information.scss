@@ -31,6 +31,18 @@
     @include mediaSlider {
         width: 80%;
     }
+    @include slider-80rem {
+        height: 40rem;
+    }
+    @include slider-60rem {
+        height: 30rem;
+    }
+    @include slider-50rem {
+        height: 20rem;
+    }
+    @include slider-35rem {
+        height: 17rem;
+    }
 }
 
 #slide{

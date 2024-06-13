@@ -25,6 +25,30 @@
     }
 }
 
+@mixin slider-80rem {
+    @media screen and (max-width: $slider-80rem) {
+        @content;
+    }
+}
+
+@mixin slider-60rem {
+    @media screen and (max-width: $slider-60rem) {
+        @content;
+    }
+}
+
+@mixin slider-50rem {
+    @media screen and (max-width: $slider-50rem) {
+        @content;
+    }
+}
+
+@mixin slider-35rem {
+    @media screen and (max-width: $slider-35rem) {
+        @content;
+    }
+}
+
 @mixin mediaDecorNumber {
     @media screen and (max-width: $decorNumber) {
         @content;
