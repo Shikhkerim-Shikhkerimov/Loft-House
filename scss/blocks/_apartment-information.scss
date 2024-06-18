@@ -116,7 +116,10 @@
     img{
         width: 100%;
         height: 100%;
-
+    }
+    @include slider-80rem {
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }
 
